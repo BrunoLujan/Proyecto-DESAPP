@@ -15,4 +15,24 @@ class ExampleTest extends TestCase
     {
         $this->assertTrue(true);
     }
+
+    public function testPushAndPop()
+    {
+        $this->assertTrue(true);
+    }
+
+    public function testEmpty()
+    {
+        $this->assertTrue(true);
+    }
+
+    public function testBasicRoutePhotosTest()
+    {
+        $this->assertTrue(true);
+    }
+
+    public function testBasicRoutePhotosIdTest()
+    {
+        $this->assertTrue(true);
+    }
 }

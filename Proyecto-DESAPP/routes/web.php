@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/photos', function () {
+    return "Photos";
+});
+
+Route::get('/photos/{id}', function ($id) {
+    return "Mostrando detalle de la foto: {$id}";
+});

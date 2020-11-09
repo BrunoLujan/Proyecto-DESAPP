@@ -37,5 +37,20 @@ class ExampleTest extends TestCase
         return $stack;
     }
 
+    public function testBasicRoutePhotosTest()
+    {
+        $response = $this->get('/photos');
+
+        $response->assertStatus(200);
+        $response->assertSee('Photos');
+    }
+
+    public function testBasicRoutePhotosIdTest()
+    {
+        $response = $this->get('/photos/10');
+
+        $response->assertStatus(200);
+        $response->assertSee('Mostrando detalle de la foto: 10');
+    }
 
 }
