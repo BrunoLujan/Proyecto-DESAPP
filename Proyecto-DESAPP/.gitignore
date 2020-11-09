@@ -1,4 +1,4 @@
-/storage/*.key
+/storage/*.keygit
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
